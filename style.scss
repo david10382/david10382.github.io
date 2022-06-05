@@ -9,21 +9,44 @@ $neutral: #ffffff;
 
 header {
     background-color: $primary2;
+    color: $neutral;
+    padding: 4em;
     
-    h1 {
-        color: $neutral;
-        text-align: left center;
-    }
-    ul {
-        color: $neutral;
-        list-style: none;
-        display: flex;
-        flex-direction: row wrap;
-        justify-content: flex-end; 
-        align-items: center;        
-    }
-   
 }
+    .header-wrapper {
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto 0 auto;
+        
+    
+        #checkbox-toggle{
+            display: none;
+
+        }
+        #checkbox-toggle ~ .navbar{
+            display: none;
+        }
+
+        #checkbox-toggle:checked ~ .navbar{
+            display: flex;
+        }
+
+
+        
+       .navbar {
+           color: $neutral;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           a{
+               color: $neutral;
+               text-decoration: none;
+               margin: 15px;
+               padding: 15px;
+           }
+       }
+    }
+
 
 
 body {
@@ -39,7 +62,7 @@ footer {
         width: 100%;
         max-width: 1600px;
         margin: 0 auto 0 auto;
-        text-align: center;
+        
     }
 
     .footer_first{
@@ -57,12 +80,29 @@ footer {
 
 
 /* Media Q */
-
 // ipad
 @media screen and (min-width: 750px) {
-    header {
+    .header-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
+        .toggle-label{
+            display: none;
+        }
+        
+        #checkbox-toggle ~ .navbar {
+            display: flex;
+        }
+
+        .navbar {
+            flex-direction: row;
+            justify-content: end;
+            
+        }
     }
+    
+    
     .footer_wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -76,4 +116,9 @@ footer {
             margin-top: 0;
         }
     }
+}
+
+// desktop
+@media  screen and (min-width: 750px) {
+    
 }
