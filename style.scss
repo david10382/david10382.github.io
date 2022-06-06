@@ -7,17 +7,43 @@ $primary1: #8C9086;
 $primary2: #000000;
 $neutral: #ffffff;
 
+h1, h2, h3, h4, h5, body, p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+
 header {
     background-color: $primary2;
     color: $neutral;
-    padding: 4em;
+    padding: 2em;
     
+}
+
+.no-underline-link{
+    text-decoration: none;
+}
+
+
+.menu{
+    position:relative;
+}
+.navbar{
+    position:absolute;
+    padding:0;
+    background-color: $primary2;
+    border-color: $neutral;
+    border: 1px;
+    right:-2em;
 }
     .header-wrapper {
         width: 100%;
         max-width: 1600px;
         margin: 0 auto 0 auto;
-        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     
         #checkbox-toggle{
             display: none;
@@ -42,7 +68,7 @@ header {
                color: $neutral;
                text-decoration: none;
                margin: 15px;
-               padding: 15px;
+               
            }
        }
     }
@@ -51,6 +77,18 @@ header {
 
 body {
     background-color: $primary1;
+}
+
+.icons{
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+}
+p {
+    a{
+        color: $neutral;
+        text-decoration: none;
+    }
 }
 
 footer {
@@ -98,7 +136,11 @@ footer {
         .navbar {
             flex-direction: row;
             justify-content: end;
-            
+            position: relative;
+
+            a{
+                padding: 15px;
+            }
         }
     }
     
