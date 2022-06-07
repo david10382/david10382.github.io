@@ -3,14 +3,20 @@
   padding: 0px;
 }
 
-h1, h2, h3, h4, h5, body, p {
+h1, h2, h3, h4, h5, body, p, input {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 14px;
+  color: #232323;
+}
+
+.active-page {
+  background-color: #ffffff;
+  color: #232323 !important;
 }
 
 header {
-  background-color: #000000;
+  background-color: #232323;
   color: #ffffff;
   padding: 2em;
 }
@@ -26,7 +32,7 @@ header {
 .navbar {
   position: absolute;
   padding: 0;
-  background-color: #000000;
+  background-color: #232323;
   border-color: #ffffff;
   border: 1px;
   right: -2em;
@@ -59,7 +65,11 @@ header {
 .header-wrapper .navbar a {
   color: #ffffff;
   text-decoration: none;
-  margin: 15px;
+  padding: 15px;
+}
+.header-wrapper .navbar a:hover {
+  background-color: #ffffff;
+  color: #232323 !important;
 }
 
 body {
@@ -72,13 +82,14 @@ body {
 
 .main-wrapper {
   width: 100%;
+  margin: 0 auto;
 }
 
 .img-wrapper img {
   margin: 0 auto;
   display: block;
   width: 100%;
-  max-width: 340px;
+  max-width: 441px;
   height: auto;
 }
 
@@ -122,13 +133,14 @@ body {
 
 footer {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #232323;
   padding: 2em;
 }
 footer .footer_wrapper {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto 0 auto;
+  text-align: center;
 }
 footer .footer_first a {
   color: #ffffff;
@@ -138,12 +150,92 @@ footer .footer_second {
   margin-top: 1em;
 }
 
+.content-bottom {
+  padding-top: 5em;
+}
+
 /* Media Q */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) and (max-width: 899px) {
+  .main {
+    min-height: calc(100vh - 73px - 73px - 2em - 2em);
+  }
+}
+@media screen and (min-width: 900px) {
+  .main-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .img-wrapper {
+    order: 1;
+    width: 33%;
+  }
+
+  .main-content {
+    width: 66%;
+    padding-left: 7em;
+  }
+
+  .main-welcome {
+    margin-left: -6.5em;
+  }
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .content-left,
+.content-right {
+    flex-basis: 50%;
+    box-sizing: border-box;
+  }
+
+  .content-left {
+    font-weight: bold;
+    padding-right: 4em;
+  }
+
+  .intro {
+    font-size: 45px;
+  }
+
+  .short-intro {
+    font-size: 20px;
+  }
+
+  .qoute {
+    font-size: 30px;
+  }
+
+  .content-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  footer .footer_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  footer .footer_wrapper .footer_second {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1061px) {
   .header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 24px;
   }
   .header-wrapper .toggle-label {
     display: none;
@@ -155,53 +247,154 @@ footer .footer_second {
     flex-direction: row;
     justify-content: end;
     position: relative;
+    right: -1em;
   }
   .header-wrapper .navbar a {
     padding: 15px;
   }
 
-  .main-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .img-wrapper {
-    order: 1;
-    width: 33%;
-  }
-
-  .main-content {
-    width: 66%;
-  }
-
-  .content-wrapper {
-    display: flex;
-    align-items: center;
-  }
-
-  .content-left,
-.content-right {
-    width: 50%;
+  h1 {
+    font-size: 24px;
   }
 
   .intro {
-    font-size: 45px;
+    font-size: 96px;
   }
 
-  .footer_wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
+  .main {
+    min-height: calc(100vh - 133px - 73px - 2em - 2em);
+  }
+
+  .main-wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  .main-wrapper .short-intro {
+    font-size: 24px;
+  }
+  .main-wrapper .qoute {
+    font-size: 36px;
+  }
+}
+/* -------------------- Start - BLOG ---------------------- */
+.blog-preview {
+  display: none;
+}
+
+.blog-content-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-content {
+  background-color: #fff;
+  border: 1px solid #232323;
+  padding: 1em;
+  margin: 2em 0;
+}
+
+.blog-content-date {
+  color: #848484;
+  margin-bottom: 0.5em;
+}
+
+.blog-img {
+  max-width: 150px;
+  margin: 1em auto;
+}
+
+@media screen and (min-width: 900px) {
+  .blog-page .main-content {
+    width: 100%;
+    padding: 2em 3em;
+  }
+  .blog-page .main-welcome {
+    margin-left: 0;
+  }
+
+  .blog-wrapper {
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  footer .footer_second {
-    margin-top: 0;
+  .blog-item {
+    flex-basis: 31%;
+  }
+
+  .blog-content {
+    margin: 1em 0;
   }
 }
+@media screen and (min-width: 1061px) {
+  .blog-item {
+    flex-basis: 22%;
+  }
+
+  .blog-preview {
+    display: block;
+    cursor: pointer;
+    padding: 0.5em 0;
+    background: #ACACAC;
+    padding: 2em;
+    text-align: center;
+    border: 1px solid;
+  }
+
+  .blog-preview:hover ~ .blog-content {
+    display: block;
+  }
+
+  .blog-num {
+    display: block;
+    font-size: 24px;
+  }
+
+  .blog-content {
+    display: none;
+    position: absolute;
+    top: 15%;
+    right: -15%;
+    width: 30%;
+  }
+
+  .blog-content-bottom {
+    text-align: center;
+  }
+
+  .blog-wrapper {
+    position: relative;
+    margin-top: 2em;
+  }
+}
+/* -------------------- End - BLOG ---------------------- */
+/* -------------------- Start - Contact ---------------------- */
+.contact-box {
+  background-color: #D9D9D9;
+  border: 1px solid;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+.contact-button {
+  padding: 0.25em 1em;
+  border: 0;
+}
+
+@media screen and (min-width: 900px) {
+  .impact-message {
+    color: #ffffff;
+  }
+
+  .contact-page .intro {
+    position: relative;
+  }
+  .contact-page .impact-message {
+    position: absolute;
+    left: 0;
+    top: 18px;
+  }
+}
+/* -------------------- End - Contact ---------------------- */
 
 /*# sourceMappingURL=style.css.map */
