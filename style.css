@@ -6,6 +6,7 @@
 h1, h2, h3, h4, h5, body, p {
   font-family: "Inter", sans-serif;
   font-weight: 700;
+  font-size: 14px;
 }
 
 header {
@@ -65,13 +66,56 @@ body {
   background-color: #8C9086;
 }
 
-.icons {
+.main {
+  padding: 2em;
+}
+
+.main-wrapper {
   width: 100%;
-  max-width: 50px;
+}
+
+.img-wrapper img {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 340px;
   height: auto;
 }
 
-p a {
+.main-content {
+  padding: 2em 3em 0;
+}
+
+.main-welcome {
+  padding-bottom: 1em;
+}
+
+.intro {
+  font-size: 24px;
+  font-style: italic;
+}
+
+.short-intro {
+  font-size: 14px;
+}
+
+.qoute {
+  font-style: italic;
+  font-size: 24px;
+  margin: 1em 0;
+}
+
+.icon-wrapper .icons {
+  width: 100%;
+  max-width: 25px;
+  height: auto;
+}
+
+.update-message {
+  align-items: center;
+  margin-top: 1em;
+}
+.update-message a {
   color: #ffffff;
   text-decoration: none;
 }
@@ -114,6 +158,36 @@ footer .footer_second {
   }
   .header-wrapper .navbar a {
     padding: 15px;
+  }
+
+  .main-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .img-wrapper {
+    order: 1;
+    width: 33%;
+  }
+
+  .main-content {
+    width: 66%;
+  }
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .content-left,
+.content-right {
+    width: 50%;
+  }
+
+  .intro {
+    font-size: 45px;
   }
 
   .footer_wrapper {
