@@ -3,7 +3,7 @@
   padding: 0px;
 }
 
-h1, h2, h3, h4, h5, body, p, input {
+h1, h2, h3, h4, h5, body, p, input, textarea {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -375,13 +375,45 @@ footer .footer_second {
   padding: 2em;
   margin-top: 2em;
 }
+.contact-box input, .contact-box textarea {
+  padding: 0.25em;
+}
 
 .contact-button {
-  padding: 0.25em 1em;
+  background-color: #232323;
+  color: #ffffff;
+  display: block;
+  margin-left: auto;
+  padding: 0.25em 1em !important;
   border: 0;
 }
 
+.contact-button:hover {
+  background-color: #ffffff;
+  color: #232323 !important;
+}
+
+.contact-row {
+  margin-bottom: 0.5em;
+}
+
+.contact-message-label {
+  display: block;
+}
+
+.contact-message-box {
+  width: 100%;
+  height: 10em;
+}
+
 @media screen and (min-width: 900px) {
+  .contact-wrapper {
+    width: 65%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .impact-message {
     color: #ffffff;
   }

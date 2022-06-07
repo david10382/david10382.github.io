@@ -49,15 +49,21 @@
                     <div class="contact-box">
                         <form>
                       
-                          <label for="fname">Name:</label>
-                          <input type="text" id="fname" name="name" placeholder="Your name..">
+                            <div class="contact-row">
+                                <label for="fname">Name:</label>
+                                <input type="text" id="fname" name="name" placeholder="Your name..">
+                            </div>
                       
-                          <label for="lname">Email:</label>
-                          <input type="text" id="lname" name="email" placeholder="Your email..">
+                            <div class="contact-row">
+                                <label for="lname">Email:</label>
+                                <input type="text" id="lname" name="email" placeholder="Your email..">
+                            </div>
                     
                       
-                          <label for="message">Message:</label>
-                          <textarea id="message" name="message" placeholder="Your message.." style="height:200px"></textarea>
+                            <div class="contact-row">
+                                <label for="message" class="contact-message-label">Message:</label>
+                                <textarea id="message" class="contact-message-box" name="message" placeholder="Your message.."></textarea>
+                            </div>
                       
                           <input type="submit" value="Submit" class="contact-button">
                       
