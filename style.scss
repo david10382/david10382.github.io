@@ -7,6 +7,10 @@ $primary1: #8C9086;
 $primary2: #232323;
 $neutral: #ffffff;
 
+html, body {
+    height: 100%;
+}
+
 h1, h2, h3, h4, h5, body, p, input, textarea {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -14,7 +18,9 @@ h1, h2, h3, h4, h5, body, p, input, textarea {
     color: $primary2;
 }
 
-
+h1 {
+    color: $neutral;
+}
 
 @mixin card{
     padding: 2em;
@@ -48,10 +54,20 @@ header {
     text-decoration: none;
 }
 
+.logo-wrapper {
+    height: 60px;
+}
+
+#header-img {
+    max-height: 100%;
+    width: auto;
+}
+
 
 .menu{
     position:relative;
 }
+
 .navbar{
     position:absolute;
     padding:0;
@@ -103,10 +119,13 @@ header {
 
 body {
     background-color: $primary1;
+    display: flex;
+    flex-direction: column;
 }
 
 .main{
     @include card();
+    flex: 1 0 auto;
 }
 .main-wrapper{
     width: 100%;
@@ -170,6 +189,8 @@ footer {
     color: $neutral;
     background-color: $primary2;
     padding: 2em;
+    flex-shrink: 0;
+    
 
     .footer_wrapper {
         width: 100%;
@@ -200,7 +221,7 @@ footer {
 
 @media screen and (min-width: 750px) and (max-width: 899px) {
     .main {
-        min-height: calc(100vh - 73px - 73px - 2em - 2em);
+        
     }
 }
 
@@ -320,7 +341,7 @@ footer {
         font-size: 96px;
     }
     .main {
-        min-height: calc(100vh - 133px - 73px - 2em - 2em);
+        
     }
     .main-wrapper {
     max-width: 1600px;
@@ -344,6 +365,9 @@ footer {
 
 
 
+/* -------------------- Start - ABOUT ---------------------- */
+
+/* -------------------- End  - ABOUT ---------------------- */
 
 /* -------------------- Start - BLOG ---------------------- */
 
@@ -446,10 +470,9 @@ footer {
 }
 /* -------------------- End - BLOG ---------------------- */
 
+/* -------------------- Start - Resume ---------------------- */
 
-
-
-
+/* -------------------- End  - Resume ---------------------- */
 
 
 /* -------------------- Start - Contact ---------------------- */

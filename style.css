@@ -3,11 +3,19 @@
   padding: 0px;
 }
 
+html, body {
+  height: 100%;
+}
+
 h1, h2, h3, h4, h5, body, p, input, textarea {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 14px;
   color: #232323;
+}
+
+h1 {
+  color: #ffffff;
 }
 
 .active-page {
@@ -23,6 +31,15 @@ header {
 
 .no-underline-link {
   text-decoration: none;
+}
+
+.logo-wrapper {
+  height: 60px;
+}
+
+#header-img {
+  max-height: 100%;
+  width: auto;
 }
 
 .menu {
@@ -74,10 +91,13 @@ header {
 
 body {
   background-color: #8C9086;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
   padding: 2em;
+  flex: 1 0 auto;
 }
 
 .main-wrapper {
@@ -135,6 +155,7 @@ footer {
   color: #ffffff;
   background-color: #232323;
   padding: 2em;
+  flex-shrink: 0;
 }
 footer .footer_wrapper {
   width: 100%;
@@ -155,11 +176,6 @@ footer .footer_second {
 }
 
 /* Media Q */
-@media screen and (min-width: 750px) and (max-width: 899px) {
-  .main {
-    min-height: calc(100vh - 73px - 73px - 2em - 2em);
-  }
-}
 @media screen and (min-width: 900px) {
   .main-wrapper {
     display: flex;
@@ -261,10 +277,6 @@ footer .footer_second {
     font-size: 96px;
   }
 
-  .main {
-    min-height: calc(100vh - 133px - 73px - 2em - 2em);
-  }
-
   .main-wrapper {
     max-width: 1600px;
     margin: 0 auto;
@@ -276,6 +288,8 @@ footer .footer_second {
     font-size: 36px;
   }
 }
+/* -------------------- Start - ABOUT ---------------------- */
+/* -------------------- End  - ABOUT ---------------------- */
 /* -------------------- Start - BLOG ---------------------- */
 .blog-preview {
   display: none;
@@ -368,6 +382,8 @@ footer .footer_second {
   }
 }
 /* -------------------- End - BLOG ---------------------- */
+/* -------------------- Start - Resume ---------------------- */
+/* -------------------- End  - Resume ---------------------- */
 /* -------------------- Start - Contact ---------------------- */
 .contact-box {
   background-color: #D9D9D9;
