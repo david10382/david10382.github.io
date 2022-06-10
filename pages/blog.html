@@ -16,7 +16,7 @@
                     <h1>David Cha</h1>
                 </nav>
                 <nav class="logo-wrapper">
-                    <a href="../index.html" title="main-page" target="none">
+                    <a href="/" title="main-page">
                         <img id="header-img" alt="logo" src="../img/logo.svg" />
                     </a>
                 </nav>
@@ -25,7 +25,7 @@
                     <label for="checkbox-toggle" class="toggle-label">Menu</label>
                     <nav class="navbar">
                         <a href="./about.html" title="About">About</a>
-                        <a href="./blog.html" title="Blog">Blog</a>
+                        <a href="./blog.html" class="active-page" title="Blog">Blog</a>
                         <a href="./resume.html" title="Resume">Resume</a>
                         <a href="./contact.html" title="Contact">Contact</a>
                     </nav>
@@ -35,7 +35,7 @@
         
             </nav>
         </header>
-        <div class="main">
+        <main class="main">
             <div class="main-wrapper blog-page">
                 
         
@@ -51,98 +51,105 @@
                                 labore et.
                             </p>
                         </div>
-                        
+
                         <section class="blog-list">   
                             <ul>
-                                <a href="#blog-1"> blog 1 Jan 13th 2021</a>
-                                <a href="#blog-2"> blog 2 Jan 13th 2021</a>
-                                <a href="#blog-3"> blog 3 Jan 13th 2021</a>
-                                <a href="#blog-4"> blog 4 Jan 13th 2021</a>
-                                <a href="#blog-5"> blog 5 Jan 13th 2021</a>
+                                <li><a href="#blog-1"> blog 1 Jan 13th 2021</a></li>
+                                <li><a href="#blog-2"> blog 2 Jan 13th 2021</a></li>
+                                <li><a href="#blog-3"> blog 3 Jan 13th 2021</a></li>
+                                <li><a href="#blog-4"> blog 4 Jan 13th 2021</a></li>
+                                <li><a href="#blog-5"> blog 5 Jan 13th 2021</a></li>
                             </ul>
                         </section>
 
-                        <div class="blog-wrapper">
-                           <div class="blog-item" id="blog-1">
-                                <div class="blog-preview">
-                                    <span class="blog-num">#1</span>
-                                    <span class="blog-date">MMMMM/DD 2022</span>
+                        <section class="blog-view-wrap">
+                            <div class="blog-wrapper">
+                                <div class="blog-item" id="blog-1">
+                                    <input type="checkbox" class="blog-toggle-button" />
+                                     <div class="blog-preview">
+                                         <span class="blog-num">#1</span>
+                                         <span class="blog-date">MMMMM/DD 2022</span>
+                                     </div>
+                                     <div class="blog-content">
+                                         <div class="blog-content-top">
+                                             <span class="blog-content-date">MMMMM/DD 2022</span>
+                                             <img class="blog-img" alt="logo" src="https://via.placeholder.com/127x84?text=blog" />
+                                         </div>
+                                         <div class="blog-content-bottom">
+                                             <p>This is text conent fo 1</p>
+                                         </div>
+                                     </div>
                                 </div>
-                                <div class="blog-content">
-                                    <div class="blog-content-top">
-                                        <span class="blog-content-date">MMMMM/DD 2022</span>
-                                        <img class="blog-img" alt="logo" src="https://via.placeholder.com/127x84?text=blog" />
-                                    </div>
-                                    <div class="blog-content-bottom">
-                                        <p>This is text conent fo 1</p>
-                                    </div>
+                                <div class="blog-item" id="blog-2">
+                                    <input type="checkbox" class="blog-toggle-button" />
+                                     <div class="blog-preview">
+                                         <span class="blog-num">#2</span>
+                                         <span class="blog-date">MMMMM/DD 2022</span>
+                                     </div>
+                                     <div class="blog-content">
+                                         <div class="blog-content-top">
+                                             <span class="blog-content-date">MMMMM/DD 2022</span>
+                                             <img class="blog-img" alt="logo" src="https://via.placeholder.com/127x84?text=blog" />
+                                         </div>
+                                         <div class="blog-content-bottom">
+                                             <p>This is text conent fo 2</p>
+                                             <p>This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing eli...</p>
+                                         </div>
+                                     </div>
                                 </div>
-                           </div>
-                           <div class="blog-item" id="blog-2">
-                                <div class="blog-preview">
-                                    <span class="blog-num">#2</span>
-                                    <span class="blog-date">MMMMM/DD 2022</span>
+                                <div class="blog-item" id="blog-3">
+                                    <input type="checkbox" class="blog-toggle-button" />
+                                     <div class="blog-preview">
+                                         <span class="blog-num">#3</span>
+                                         <span class="blog-date">MMMMM/DD 2022</span>
+                                     </div>
+                                     <div class="blog-content">
+                                         <div class="blog-content-top">
+                                             <span class="blog-content-date">MMMMM/DD 2022</span>
+                                             <img class="blog-img" alt="logo" src="https://via.placeholder.com/127x84?text=blog" />
+                                         </div>
+                                         <div class="blog-content-bottom">
+                                             <p>This is text conent fo 3</p>
+                                             <p>This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing eli...</p>
+                                         </div>
+                                     </div>
                                 </div>
-                                <div class="blog-content">
-                                    <div class="blog-content-top">
-                                        <span class="blog-content-date">MMMMM/DD 2022</span>
-                                        <img class="blog-img" alt="logo" src="https://via.placeholder.com/127x84?text=blog" />
-                                    </div>
-                                    <div class="blog-content-bottom">
-                                        <p>This is text conent fo 2</p>
-                                        <p>This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing eli...</p>
-                                    </div>
-                                </div>
-                           </div>
-                           <div class="blog-item" id="blog-3">
-                                <div class="blog-preview">
-                                    <span class="blog-num">#3</span>
-                                    <span class="blog-date">MMMMM/DD 2022</span>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-content-top">
-                                        <span class="blog-content-date">MMMMM/DD 2022</span>
-                                        <img class="blog-img" alt="logo" src="https://via.placeholder.com/127x84?text=blog" />
-                                    </div>
-                                    <div class="blog-content-bottom">
-                                        <p>This is text conent fo 3</p>
-                                        <p>This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing eli...</p>
-                                    </div>
-                                </div>
-                           </div>
-                           <div class="blog-item" id="blog-4">
-                                <div class="blog-preview">
-                                    <span class="blog-num">#4</span>
-                                    <span class="blog-date">MMMMM/DD 2022</span>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-content-top">
-                                        <span class="blog-content-date">MMMMM/DD 2022</span>
-                                        <img class="blog-img" alt="logo" src="https://via.placeholder.com/127x84?text=blog" />
-                                    </div>
-                                    <div class="blog-content-bottom">
-                                        <p>This is text conent fo 4</p>
-                                        <p>This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing eli...</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-item" id="blog-5">
-                                <div class="blog-preview">
-                                    <span class="blog-num">#5</span>
-                                    <span class="blog-date">MMMMM/DD 2022</span>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-content-top">
-                                        <span class="blog-content-date">MMMMM/DD 2022</span>
-                                        <img class="blog-img" alt="logo" src="https://via.placeholder.com/127x84?text=blog" />
-                                    </div>
-                                    <div class="blog-content-bottom">
-                                        <p>This is text conent fo 5</p>
-                                        <p>This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing eli...</p>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>    
+                                <div class="blog-item" id="blog-4">
+                                    <input type="checkbox" class="blog-toggle-button" />
+                                     <div class="blog-preview">
+                                         <span class="blog-num">#4</span>
+                                         <span class="blog-date">MMMMM/DD 2022</span>
+                                     </div>
+                                     <div class="blog-content">
+                                         <div class="blog-content-top">
+                                             <span class="blog-content-date">MMMMM/DD 2022</span>
+                                             <img class="blog-img" alt="logo" src="https://via.placeholder.com/127x84?text=blog" />
+                                         </div>
+                                         <div class="blog-content-bottom">
+                                             <p>This is text conent fo 4</p>
+                                             <p>This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing eli...</p>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="blog-item" id="blog-5">
+                                     <input type="checkbox" class="blog-toggle-button" />
+                                     <div class="blog-preview">
+                                         <span class="blog-num">#5</span>
+                                         <span class="blog-date">MMMMM/DD 2022</span>
+                                     </div>
+                                     <div class="blog-content">
+                                         <div class="blog-content-top">
+                                             <span class="blog-content-date">MMMMM/DD 2022</span>
+                                             <img class="blog-img" alt="logo" src="https://via.placeholder.com/127x84?text=blog" />
+                                         </div>
+                                         <div class="blog-content-bottom">
+                                             <p>This is text conent fo 5</p>
+                                             <p>This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. This is text conent for blog post.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipiscing eli...</p>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>   
+                        </section> 
         
         
                     <div class="content-bottom">
@@ -163,7 +170,7 @@
                     </div>
                 </div>
             </div>
-     </div>
+        </main>
     <footer>
         <div class="footer_wrapper">
             <div class="footer_first">
