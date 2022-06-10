@@ -290,6 +290,7 @@ footer {
     
 
     footer{
+        
         .footer_wrapper {
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -366,6 +367,44 @@ footer {
 
 
 /* -------------------- Start - ABOUT ---------------------- */
+.s-test   {
+    color: $neutral;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    padding-bottom: 10px;
+    display: block;
+    // font-style: ;
+    
+}
+.tech-stack {
+    display: flex;
+    
+    
+
+    a{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: $neutral;
+        color: $primary2;
+        text-align: center;
+        line-height: 45px;
+        margin-right: 3px;;
+        
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .tech-stack {
+        justify-content: flex-start;
+
+        a {
+            margin-right: 6px;
+        }
+        
+    }
+}
 
 /* -------------------- End  - ABOUT ---------------------- */
 
@@ -470,7 +509,79 @@ footer {
 }
 /* -------------------- End - BLOG ---------------------- */
 
+
+
 /* -------------------- Start - Resume ---------------------- */
+
+.main-resume {
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+
+    p{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       
+
+        a{
+            display: none;
+            color: $neutral;
+        }
+    }
+}
+
+.resume-wrapper {
+    width:100%;
+}
+
+.resume-click-bottom {
+
+    p {
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        padding-top: 2em;
+        
+        a{
+            display: block;
+            color: $neutral;
+        }
+        
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .main-resume {
+        p{
+            display: flex;
+            justify-content: center;
+            
+    
+            a{
+                display:block;
+                color: $neutral;
+            }
+        }
+    }
+    .main-content {
+        width: 80%;
+        padding-left: 7em;
+    }
+
+    .resume-wrapper {
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 3em;
+    }
+    .resume-click-bottom {
+        display: none;
+        padding-top:0;
+    }
+}
 
 /* -------------------- End  - Resume ---------------------- */
 

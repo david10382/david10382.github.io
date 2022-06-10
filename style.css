@@ -289,6 +289,37 @@ footer .footer_second {
   }
 }
 /* -------------------- Start - ABOUT ---------------------- */
+.s-test {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.tech-stack {
+  display: flex;
+}
+.tech-stack a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #232323;
+  text-align: center;
+  line-height: 45px;
+  margin-right: 3px;
+}
+
+@media screen and (min-width: 900px) {
+  .tech-stack {
+    justify-content: flex-start;
+  }
+  .tech-stack a {
+    margin-right: 6px;
+  }
+}
 /* -------------------- End  - ABOUT ---------------------- */
 /* -------------------- Start - BLOG ---------------------- */
 .blog-preview {
@@ -383,6 +414,64 @@ footer .footer_second {
 }
 /* -------------------- End - BLOG ---------------------- */
 /* -------------------- Start - Resume ---------------------- */
+.main-resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.main-resume p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main-resume p a {
+  display: none;
+  color: #ffffff;
+}
+
+.resume-wrapper {
+  width: 100%;
+}
+
+.resume-click-bottom p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 2em;
+}
+.resume-click-bottom p a {
+  display: block;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 900px) {
+  .main-resume p {
+    display: flex;
+    justify-content: center;
+  }
+  .main-resume p a {
+    display: block;
+    color: #ffffff;
+  }
+
+  .main-content {
+    width: 80%;
+    padding-left: 7em;
+  }
+
+  .resume-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3em;
+  }
+
+  .resume-click-bottom {
+    display: none;
+    padding-top: 0;
+  }
+}
 /* -------------------- End  - Resume ---------------------- */
 /* -------------------- Start - Contact ---------------------- */
 .contact-box {
