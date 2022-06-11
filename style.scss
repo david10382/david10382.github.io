@@ -129,6 +129,8 @@ body {
 .main{
     @include card();
     flex: 1 0 auto;
+    display: flex;
+    align-items: center;
 }
 .main-wrapper{
     width: 100%;
@@ -250,10 +252,6 @@ footer {
         width: 66%;
         padding-left: 7em;
     }
-
-    .main-welcome {
-        margin-left: -6.5em;
-    }
     .content-wrapper {
         display: flex;
         align-items: center;
@@ -344,8 +342,8 @@ footer {
     .intro {
         font-size: 96px;
     }
-    .main {
-        
+    .main-content{
+        padding-top: 0;
     }
     .main-wrapper {
     max-width: 1600px;
@@ -370,7 +368,7 @@ footer {
 
 
 /* -------------------- Start - ABOUT ---------------------- */
-.s-test   {
+.skill-head   {
     color: $neutral;
     font-weight: bold;
     font-size: 18px;
@@ -379,6 +377,12 @@ footer {
     display: block;
     // font-style: ;
     
+}
+.about-main{
+    .img-wrapper img{
+        width: auto;
+        max-height: 350px;
+    }
 }
 .tech-stack {
     display: flex;
@@ -406,6 +410,11 @@ footer {
             margin-right: 6px;
         }
         
+    }
+    .about-main{
+        .img-wrapper img{
+            max-height: 600px;
+        }
     }
 }
 
@@ -525,7 +534,7 @@ footer {
     }
 
     .blog-view-wrap{
-        width: 956px;
+        width: 940px;
         margin: 0 auto;
     }
 
@@ -578,24 +587,24 @@ footer {
     #blog-2{
         .blog-content{
             top: 0;
-            left: 265px;
+            left: 265.5px;
         }
     }
     #blog-3{
         .blog-content{
             left: 483px;
-            top: -111.5px;
+            top: -114.5px;
         }
     }
     #blog-4{
         .blog-content{
-            top: -111.5px;
-            left: 265px;
+            top: -114.5px;
+            left: 265.5px;
         }
     }
     #blog-5{
         .blog-content{
-            top: -223px;
+            top: -229px;
             left: 483px;
         }
     }
@@ -607,14 +616,12 @@ footer {
 /* -------------------- Start - Resume ---------------------- */
 
 .main-resume {
-    display:flex;
-    flex-direction: column;
-    justify-content: end;
+
+    .intro{
+        margin-bottom: 15px;
+    }
 
     p{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
        
 
         a{
@@ -622,6 +629,40 @@ footer {
             color: $neutral;
         }
     }
+}
+
+.resume-page{
+    .short-intro{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        h3{
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.experience,
+.other{
+    h3{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    ul{
+        padding-left: 3em;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+.job-title{
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.timeline {
+    font-style: italic;
+    display: block;
+    opacity: 0.75;
 }
 
 .resume-wrapper {
@@ -648,31 +689,71 @@ footer {
 
     .main-resume {
         p{
-            display: flex;
-            justify-content: center;
-            
-    
             a{
-                display:block;
+                display: inline;
                 color: $neutral;
             }
         }
     }
+    .education-heading{
+        margin-top: 3em;
+    }
+
     .main-content {
         width: 80%;
-        padding-left: 7em;
+        padding-left: 2em;
     }
 
     .resume-wrapper {
         width:100%;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-evenly;
-        padding: 3em;
+        justify-content: space-between;
     }
     .resume-click-bottom {
         display: none;
         padding-top:0;
+    }
+    .resume-page{
+        .main-resume,
+        .short-intro,
+        .experience,
+        .other
+        {
+            h3{
+                font-size: 22px;
+            }
+            p,
+            ul{
+                font-size: 17px;
+            }
+        }
+        .short-intro{
+            flex-basis: 100%;
+            margin: 3em 0;
+        }
+        .experience,
+        .other{
+            flex-basis: calc(50% - 3em);
+        }
+    }
+}
+
+@media  screen and (min-width: 1061px) {
+    .main-resume{
+        margin-bottom: 5em;
+    }
+    
+    .resume-page{
+        padding: 4em;
+        .short-intro,
+        .experience,
+        .other{
+            flex-basis: calc(33% - 1.5em);
+            padding: 0;
+            margin: 0;
+        }
     }
 }
 
@@ -729,6 +810,8 @@ footer {
     }
 
     .contact-page{
+        display: block;
+        padding: 2em;
         .intro{
             position: relative;
         }
