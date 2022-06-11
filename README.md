@@ -6,38 +6,56 @@ github repo: https://github.com/david10382?tab=repositories
 # portfolio overview 
 
 ## purpose
-This is a portfolio website for the purpose of showcasing my adeptness in utilizing html and css skill set.
+This is a portfolio website for the purpose of showcasing my adeptness in utilizing **Html** and **CSS** skill set for creating **websites**. 
 
-The site is designed and built to be responsive in all screen resolutions.
+The site is designed and built to be responsive in all screen resolutions. To achieve this, a minimalist design was utilized.
 
-To achieve this a minimalist design was utilized.
+As a Web Developer student, I am continually learning and adding new skills to my tech stack. It is my mission to  implement skills in creative and innovatie ways.
 
-As a Web Developer student, I am continually learning and adding new skills to my tech stack. It is my mission to  implement skills in creative and innovatie ways .
-
-
+# sitemap
+![site map](./docs/site-map.png "site map")
+<br>
 
 # functional/features
 
 ## common components found through out the site is as follows:
 
-1. logo *that redirects to the main page* 
-2. navbar *desktop screen size*
-3. handburger menu *mobile screen size)*
-4. footer *clickable email opening email client*
+1. **Logo**: *that redirects to the main page* 
 
-# sitemap
-include image of sitemap. ! [This is an image](./img/site-map.png)
+    ![logo](./docs/logo.png "logo")
 
-# target audience
-The website is deisgned with prospective employers in mind. As such, 
+2.  **Navbar**: Responsive with hover effect *desktop screen size*
 
+![navbar-desktop](./docs/navbar-desktop.png)
+
+3. **handburger menu**: *mobile screen size*
+
+    ![Hamburger menu](./docs/Hamburger%20menu.png)
+
+
+4. **Icons & clickable email**: links to github & linkedin. Also link to email client
+
+![icons and email](./docs/icons%20and%20email.png)
+
+5. footer *clickable email opening email client*
+
+    ![clicable email](./docs/clickable%20email.png)
+
+
+# Target audience
+The website is deisgned with prospective IT employers in mind. As such, it displays my current ability with tools HTML and CSS. 
+
+I hope to hear from employers that specifically work on Website Decelopment.
+
+<!-- Tables-->
 # tech stack
 
-## Current skills 
+|Current skills     | Skills to learn   |
+|-------------------|-------------------|
+|- [x]**HTML**      |- [ ] python       |
+|- [x]**CSS**       |- [ ] Javascript   |
+|- [x]**Sass**      |                   |
+|- [x]**Git**       |                   |
+|- [x]**Figma**     |                   |
 
-1. **Html**
-2. **CSS**
-3. **Sass**
-4. **Git**
-5. **Figma** 
-
+<!-- Tables-->
