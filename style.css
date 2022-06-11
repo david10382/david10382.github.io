@@ -385,7 +385,7 @@ footer .footer_second {
 @media screen and (min-width: 900px) {
   .blog-page .main-content {
     width: 100%;
-    padding: 2em 3em;
+    padding: 0;
   }
   .blog-page .main-welcome {
     margin-left: 0;
@@ -583,7 +583,7 @@ footer .footer_second {
 
   .main-content {
     width: 80%;
-    padding-left: 2em;
+    padding-left: 0;
   }
 
   .resume-wrapper {
@@ -630,7 +630,7 @@ footer .footer_second {
   }
 
   .resume-page {
-    padding: 4em;
+    padding: 2em;
   }
   .resume-page .short-intro,
 .resume-page .experience,
@@ -693,7 +693,6 @@ footer .footer_second {
 
   .contact-page {
     display: block;
-    padding: 2em;
   }
   .contact-page .intro {
     position: relative;

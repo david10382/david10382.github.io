@@ -472,7 +472,7 @@ footer {
     .blog-page {
         .main-content{
             width: 100%;
-            padding: 2em 3em;
+            padding: 0
         }
         .main-welcome {
             margin-left: 0;
@@ -701,7 +701,7 @@ footer {
 
     .main-content {
         width: 80%;
-        padding-left: 2em;
+        padding-left: 0;
     }
 
     .resume-wrapper {
@@ -746,7 +746,7 @@ footer {
     }
     
     .resume-page{
-        padding: 4em;
+        padding: 2em;
         .short-intro,
         .experience,
         .other{
@@ -811,7 +811,6 @@ footer {
 
     .contact-page{
         display: block;
-        padding: 2em;
         .intro{
             position: relative;
         }
