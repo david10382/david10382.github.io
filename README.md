@@ -50,12 +50,12 @@ I hope to hear from employers that specifically work on Website Decelopment.
 <!-- Tables-->
 # tech stack
 
-|Current skills     | Skills to learn   |
-|-------------------|-------------------|
-|- [x]**HTML**      |- [ ] python       |
-|- [x]**CSS**       |- [ ] Javascript   |
-|- [x]**Sass**      |                   |
-|- [x]**Git**       |                   |
-|- [x]**Figma**     |                   |
+|Current skills   | Skills to learn |
+|-----------------|-----------------|
+|[x]**HTML**      |[ ] python       |
+|[x]**CSS**       |[ ] Javascript   |
+|[x]**Sass**      |                 |
+|[x]**Git**       |                 |
+|[x]**Figma**     |                 |
 
 <!-- Tables-->
