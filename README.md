@@ -52,11 +52,11 @@ I hope to hear from employers that specifically work on Website Decelopment.
 
 ## Current skills   
 
-- [x]HTML        
-- [x]**CSS**     
-- [x]**Sass**    
-- [x]**Git**    
-- [x]**Figma**   
+- [x] HTML        
+- [x] CSS    
+- [x] Sass    
+- [x] Git    
+- [x] Figma   
 
 ## Skills to learn 
 
