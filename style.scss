@@ -1,3 +1,4 @@
+/* -------------------- Start - COMMON---------------------- */
 * {
     margin: 0px;
     padding: 0px;
@@ -122,7 +123,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* -------------------- End - COMMON---------------------- */
 
+/* -------------------- Start - MAIN PAGE---------------------- */
 .main{
     @include card();
     flex: 1 0 auto;
@@ -358,7 +361,7 @@ footer {
         }
     }
 }
-
+/* -------------------- End - MAIN PAGE---------------------- */
     
 
 

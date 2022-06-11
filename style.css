@@ -1,3 +1,4 @@
+/* -------------------- Start - COMMON---------------------- */
 * {
   margin: 0px;
   padding: 0px;
@@ -95,6 +96,8 @@ body {
   flex-direction: column;
 }
 
+/* -------------------- End - COMMON---------------------- */
+/* -------------------- Start - MAIN PAGE---------------------- */
 .main {
   padding: 2em;
   flex: 1 0 auto;
@@ -288,6 +291,7 @@ footer .footer_second {
     font-size: 36px;
   }
 }
+/* -------------------- End - MAIN PAGE---------------------- */
 /* -------------------- Start - ABOUT ---------------------- */
 .s-test {
   color: #ffffff;
