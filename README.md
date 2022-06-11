@@ -6,7 +6,7 @@ github repo: https://github.com/david10382?tab=repositories
 # portfolio overview 
 
 ## purpose
-This is a portfolio website for the purpose of showcasing my adeptness in utilizing **Html** and **CSS** skill set for creating **websites**. 
+This is a portfolio website for the purpose of showcasing my adeptness in utilizing **Html** and **CSS** skill set for creating **websites. 
 
 The site is designed and built to be responsive in all screen resolutions. To achieve this, a minimalist design was utilized.
 
